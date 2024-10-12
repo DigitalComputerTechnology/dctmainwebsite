@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+    --nav-link-color: #000000;
+    --white-color: #fff;
+    --nav-enquery: #67B689;
+    --nav-enquery1: #e5fff1;
+    --hover-color: #009541;
+    --about-gray: #F7F7F7;
+    --footer-background: #000000CC;
+    --shadow: -13px 13px 5px -5px #4AACA380;
+}
+/* width */
+.about-first-section .row ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .about-first-section .row  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .about-first-section .row  ::-webkit-scrollbar-thumb {
+    background: var(--nav-enquery); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .about-first-section .row  ::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-color); 
+  }
+.about-first-section .row .col-3{
+    padding: 0px !important;
+    background-color: var(--white-color);
+}
+.about-first-section .row .col-3 a{
+    color: var(--hover-color);
+}
+.about-first-section .row .col-3 a:hover{
+    background-color: var(--nav-enquery1);
+}
+.about-first-section .row .col-9 .main-para{
+    text-align: justify;
+}
+.about-first-section .row .col-9 span,b,p{
+    font-size: 19px;
+}
+.about-first-section .row .col-9{
+    overflow: auto;
+}
+.about-first-section .row .col-9{
+    height: 81vh;
+}
+.about-first-section .row .col img{
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.about-first-section .row .col img:hover{
+    transform: scale(1.2);
+}
+
+/* STAFF PAGE STYLE */
+.staff-first-section{
+    height: 370px;
+}
+.staff-first-section .row h1{
+    color: var(--nav-enquery1);
+    font-size: 45px;
+}
+.staff-first-section .row p{
+    padding: 0px 300px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--nav-enquery1);
+}
+.staff-second-section .container div span{
+    background-color: var(--white-color);
+    margin-top: 40px;
+}
+.staff-second-section .container div h2{
+    font-size: 45px;
+}
+.staff-second-section .container div p{
+    padding: 0px 320px;
+}
+
+.staff-second-section .row .col .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 370px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    color: var(--hover-color);
+  }
+  
+  .staff-second-section .row .col  .title,.staff-second-section .row .col  p {
+    color: grey;
+    font-size: 18px;
+    padding: 0px !important;
+  }
+  
+  .staff-second-section .row .col  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: var(--hover-color);
+    background-color: var(--nav-enquery1);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .staff-second-section .row .col  .a {
+    text-decoration: none;
+    font-size: 22px;
+    color: gray;
+}
+
+.staff-second-section .row .col .a:hover {
+      color: var(--hover-color) !important;
+  }
+  .staff-second-section .row .col button:hover{
+      background-color: var(--hover-color) !important;
+      color: var(--white-color);
+  }
+  @media only screen and (min-width: 426px) and (max-width: 767px) {
+    .about-first-section .row .col-3 {
+        display: none;
+    }
+    .about-first-section .row .col-3, .col-9{
+        width: 100%;
+        overflow: unset !important;
+    }
+    section.about-first-section.pt-4{
+        background-color: unset !important;
+    }
+  }
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    section.about-first-section.pt-4{
+        background-color: unset !important;
+    }
+    .about-first-section .row .col-3{
+        display: none;
+    }
+    .about-first-section .row .col-3,.col-9{
+        width: 100%;
+        overflow: unset !important;
+    }
+    .about-first-section .row .col-9 .d2{
+        display: block !important;
+    }
+        .about-first-section .row .col-9 .d2 p{
+        padding: 0px !important;
+    }
+    .about-first-section .row .col-9 .main-para{
+        padding: 0px !important;
+    }
+    .about-first-section .row .col-9 .img-1,.img-2{
+        margin: 10px 0px;
+    }
+    .about-first-section .row .col-9 span, b{
+        font-size: 20px;
+    }
+    .about-first-section .row .col-9 span{
+        font-weight: 500;
+    }
+    .about-first-section .row .col-9 h5{
+        text-align: left !important;
+        margin-top: 15px !important;
+    }
+    
+h2{
+    margin-top: 25px;
+}
+
+.about-first-section .row .col img{
+    transition: none;
+    cursor: pointer;
+}
+.about-first-section .row .col img:hover{
+    transform: none;
+}
+
+/* Staff Page */
+.staff-first-section .row h1{
+    font-size: 30px !important;
+}
+.staff-first-section .row p{
+    padding: 0px;
+    font-size: unset;
+    font-weight: unset;
+}
+.staff-second-section .container div h2{
+    font-size: 30px;
+}
+.staff-second-section .container div p{
+    padding: 0px;
+}
+.footer{
+    margin-top: 0px;
+}
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+/* Staff Page */
+.staff-first-section .row h1{
+    font-size: 30px !important;
+}
+.staff-first-section .row p{
+    padding: 0px;
+    font-size: unset;
+    font-weight: unset;
+}
+.staff-second-section .container div h2{
+    font-size: 30px;
+}
+.staff-second-section .container div p{
+    padding: 0px;
+}
+.footer{
+    margin-top: 0px;
+}
+.about-first-section .row .col img{
+    transition: none;
+    cursor: pointer;
+}
+.about-first-section .row .col img:hover{
+    transform: none;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .about-first-section .row .col-3 a{
+        font-size: 12px;
+    }
+    /* Staff Page */
+.staff-first-section .row h1{
+    font-size: 40px !important;
+}
+.staff-first-section .row p{
+    padding: 0px;
+}
+.staff-second-section .container div p{
+    padding: 0px 90px;
+}
+.staff-second-section img{
+    height: 240px !important;
+}
+.legal-staff,.Tutor-staff2 h5{
+    font-size: 15px;
+}
+.staff-second-section .row .col p {
+    font-size: 8px;
+}
+.about-first-section .row .col-9 span, b{
+    font-size: 16px !important;
+}
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .about-first-section .row .col-3 a{
+        font-size: 12px;
+    }
+        /* Staff Page */
+.staff-first-section .row p{
+    padding: 0px 100px;
+}
+.staff-second-section .container div p{
+    padding: 0px 200px;
+}
+
+.staff-second-section .row .col .p1 {
+    font-size: 14px !important;
+}
+
+    }

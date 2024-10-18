@@ -5,7 +5,7 @@ function Header() {
     return (
         <nav className="container navbar navbar-expand-lg navbar-light bg-light p-0 rounded-pill">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/main"><img className="dct-logo" src="images/dct logo.png" width="77px" alt="Digital Computer Technology Logo"/></Link>
+          <Link className="navbar-brand" to="/main"><img className="dct-logo" src="/images/dct logo.png" width="77px" alt="Digital Computer Technology Logo"/></Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -68,7 +68,7 @@ function Header() {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/blog">Blog</Link>
+                <Link className="nav-link" to="/blogs">Blog</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/contact">Contact Us</Link>

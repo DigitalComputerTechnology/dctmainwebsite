@@ -151,7 +151,7 @@ function WebDevelopment() {
       </section>
 
 
-<PopularCourses/>
+      <PopularCourses />
 
       <section className="courses-fiveth-section pt-4 mt-5">
         <div className="container mt-5">

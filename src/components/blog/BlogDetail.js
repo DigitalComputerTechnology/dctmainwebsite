@@ -48,7 +48,6 @@ const BlogDetail = () => {
         console.error('Error fetching blogs: ', error);
       }
     };
-    console.log('all blogs link:', blog)
 
     fetchBlog();
     fetchBlogs();

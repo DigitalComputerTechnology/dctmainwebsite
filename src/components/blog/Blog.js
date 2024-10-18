@@ -31,11 +31,11 @@ function Blog() {
     setCategories(categories);
   };
 
-//   const handleSort = (sortBy) => {
-//     let sortOrder = sortOrder === "asc" ? "desc" : "asc";
-//     setSortBy(sortBy);
-//     setSortOrder(sortOrder);
-//   };
+  //   const handleSort = (sortBy) => {
+  //     let sortOrder = sortOrder === "asc" ? "desc" : "asc";
+  //     setSortBy(sortBy);
+  //     setSortOrder(sortOrder);
+  //   };
   const handleSort = (sortBy) => {
     setSortBy(sortBy);
     setSortOrder(sortOrder === "asc" ? "desc" : "asc");
@@ -100,6 +100,8 @@ function Blog() {
   const indexOfLastBlog = currentPage * blogsPerPage;
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
   const currentBlogs = filteredBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
+
+  console.log('currentBlogs:', currentBlogs)
 
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(filteredBlogs.length / blogsPerPage); i++) {
@@ -168,12 +170,10 @@ function Blog() {
             </div>
           </div>
           <div class="blog-row row align-items-center">
-            {currentBlogs.map((blog) => (
-              <div class="col-md-4">
+            {currentBlogs.length > 0 ? currentBlogs.map((blog) => (
+              <div className="col-md-4" key={blog.id}>
                 <Link className="text-decoration-none fs-2" to={`/blog/${blog.id}`}>
-                  <video width={"100%"} autoPlay loop muted>
-                    <source src="/images/blog_images/digital_computer_technology_kotputli_digital_marketing_blog1.mp4" type="video/mp4"></source>
-                  </video>
+                  <img src={blog.imageSrc} alt={blog.title} className="img-fluid"/>
                 </Link>
                 <div className="p-2">
                   <Link className="text-decoration-none fs-2" to={`/blog/${blog.id}`}>
@@ -184,7 +184,10 @@ function Blog() {
                   <Link className="text-decoration-none border rounded-pill px-5 py-2" to={`/blog/${blog.id}`}>View</Link>
                 </div>
               </div>
-            ))}
+            )) : (
+              <div>No blogs available</div>
+            )}
+
           </div>
           <nav aria-label="Blog Pagination">
             <ul className="pagination pagination-dark justify-content-center text-white">
